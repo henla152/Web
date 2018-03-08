@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+a {
+  color: coral;
+}
+a:hover {
+  color: black;
+  cursor: default;
+}
+h1 {
+  color: white;
+  animation-name: flip;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+h1:first-child::first-letter {
+  font-size: 2em;
+  color: red;
+}
+p {
+  color: white;
+  animation-name: leftRight;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes leftRight {
+  0% {
+    text-align: left;
+  }
+  50% {
+    text-align: right;
+    animation-name: wooooooo;
+    animation-duration: 0.5;
+    animation-duration: infinite;
+  }
+}
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+    text-align: left;
+  }
+  0% {
+    transform: rotateX(-90deg);
+    text-align: left;
+  }
+  0% {
+    transform: rotateX(-180deg);
+    text-align: right;
+  }
+  0% {
+    transform: rotateX(-270deg);
+    text-align: right;
+  }
+}
+@keyframes wooooooo {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  25% {
+    transform: skew(90deg, 270deg);
+  }
+  50% {
+    transform: skew(180deg, 180deg);
+  }
+  75% {
+    transform: skew(270deg, 90deg);
+  }
+}
+img {
+  animation-name: wooooooo;
+  animation-duration: 0.001s;
+  animation-iteration-count: infinite;
+}
